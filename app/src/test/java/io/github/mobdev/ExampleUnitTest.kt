@@ -2,8 +2,7 @@ package io.github.mobdev
 
 import org.junit.Test
 
-import org.junit.Assert.*
-
+import org.junit.Assert.assertFalse
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -11,7 +10,7 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun packageName_isNotExample() {
+        assertFalse("io.github.mobdev".contains("com.example"))
     }
 }
